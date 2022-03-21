@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #cbccd0;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #1c335f;
+  border-radius: 5px;
+}
+
+.list-of-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+.list-of-products li {
+  list-style: none;
+  border: 1px solid #e1e1e1;
+  height: 480px;
+  margin: 20px;
+  font-size: 16px;
+  font-family: arial;
+  font-weight: bolder;
+}
+
+.list-of-products li[data-visible="false"] {
+  display: none;
+}
+
+.list-of-products select {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #cbccd0;
+  color: #1c335f;
+  border: #1c335f;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.line {
+  border-bottom: 2px solid #8bbb2e;
+  width: 50px;
+  border-radius: 20px;
+  margin: 20px auto 5px;
+}
+
+img {
+  width: 348px;
+  height: 320px;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  width: 15vw;
+  font-family: arial, sans-serif;
+}
+
+@media (max-width: 1500px) {
+  h2 {
+    font-size: 14px;
+    margin: 20px auto 0 auto;
+    width: 25vw;
+  }
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 12px;
+    margin: 10px auto 0 auto;
+    width: 35vw;
+  }
+}
+
+.long {
+  width: 20vw;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+h3::after {
+  content: " zł";
+}
+
+.promotion {
+  color: #a7a4aa;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+select {
+  display: block;
+  padding: 5px 10px;
+  min-width: 100px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #a7a4aa;
+}
+
+div label {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+  min-width: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+li p:nth-of-type(1) {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #8bbb2e;
+  color: white;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+li p:nth-of-type(2) {
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #8bbb2e;
+  color: white;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
